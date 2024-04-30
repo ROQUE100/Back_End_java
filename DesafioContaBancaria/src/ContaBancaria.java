@@ -30,7 +30,12 @@ public class ContaBancaria {
         if (sacar.equalsIgnoreCase(sacarValor)) {
             System.out.println("Qual valor? ");
             double valorSaque = scanner.nextDouble();
-            System.out.println(cliente+", saque realizado, seu novo saldo é: "+ (saldo - valorSaque)+ ". foi um prazer atender-lo(a)");
+            if (valorSaque <= saldo) {
+                System.out.println(cliente+", saque realizado, seu novo saldo é: "+ (saldo - valorSaque)+ ". foi um prazer atender-lo(a)");                
+            } else {
+                System.out.println("saldo insuficiente! Sessao Encerrada.");
+            }
+            
         } else {
             System.out.println("obrigado "+ cliente + ", foi um prazer atender-lo(a)");
             
