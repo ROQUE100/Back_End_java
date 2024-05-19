@@ -47,12 +47,12 @@ public class OrdenacaoPessoas {
         ordenacaoPessoas.adicionarPessoa("David", 17, 1.56);
 
         // Exibindo a lista de pessoas adicionadas
-        System.out.println(ordenacaoPessoas.pessoaList);
+        System.out.println("Ordenacao por nome "+ ordenacaoPessoas.pessoaList);
 
         // Ordenando e exibindo por idade
-        System.out.println(ordenacaoPessoas.ordenarPorIdade());
+        System.out.println("Ordenacao por idade " + ordenacaoPessoas.ordenarPorIdade());
 
         // Ordenando e exibindo por altura
-        System.out.println(ordenacaoPessoas.ordenarPorAltura());
+        System.out.println("Ordenacao por aututa "+ ordenacaoPessoas.ordenarPorAltura());
     }
 }
